@@ -1,0 +1,137 @@
+@media (max-width: 1105px) {
+    
+    .header_nav_toggle {
+        display: inline-block;
+        z-index: 3;
+    }
+
+    .header_nav_toggle label {
+        display: block;
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+    
+    .header_nav ul {
+        display: none;
+        width: 160px;
+        line-height: 40px;
+        height: 100%;
+    }
+    
+    .header_nav a {
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+    }
+    
+    .header_nav ul li a {
+        padding: 5px 10px;
+        width: 100%;
+    }
+    
+    .header_nav a:hover {
+        text-decoration: underline;
+    }
+    
+    #header_nav_toggle:checked ~ ul {
+        display: block;
+        position: fixed;
+        background-color: rgba(0, 0, 0, .7);
+        padding: 70px 5px;
+        align-items: center;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    
+}
+
+@media (max-width: 800px) {
+
+    .footer_wrapper {
+        display: block;
+    }
+
+    .footer_wrapper ul {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .footer_wrapper ul li {
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .width {
+        width: 90%;
+    }
+
+    .auth,
+    .registration {
+        width: 370px;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .width {
+        width: 95%;
+    }
+
+    .width h2 {
+        font-size: 28px;
+    }
+
+    .header {
+        height: auto;
+        text-align: center;
+    }
+
+    .header_wrapper {
+        display: block;
+    }
+
+    .header_nav {
+        margin-left: -5px;
+    }
+    
+    .header_nav a {
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 380px) {
+
+    .width h2 {
+        font-size: 22px;
+    }
+
+    .header_nav ul {
+        width: 120px;
+    }
+
+    .auth,
+    .registration {
+        width: 250px;
+    }
+
+    .auth_title,
+    .auth_error,
+    .registration_title,
+    .registration_error {
+        font-size: 32px;
+        width: 250px;
+        text-align: center;
+        margin: 10px auto 0 auto;
+    }
+
+}
