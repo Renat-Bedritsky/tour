@@ -2,7 +2,7 @@ function checkAuthData(login, password) {
     return $.ajax({
         method: 'POST',
         dataType: 'json',
-        url: `http://localhost/auth`,
+        url: `http:\/\/localhost\/auth`,
         data: {
             auth_login: login,
             auth_password: password
@@ -14,7 +14,7 @@ function checkRegistData(name, email, login, passwordOne, passwordTwo) {
     return $.ajax({
         method: 'POST',
         dataType: 'json',
-        url: `http://localhost/registration`,
+        url: `http:\/\/localhost\/registration`,
         data: {
             regist_name: name,
             regist_email: email,
