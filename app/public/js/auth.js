@@ -64,7 +64,7 @@ authEnter.addEventListener("click", () => {
 
 function authDataProcessing(response) {
     if (typeof response.admission !== 'undefined') {
-        window.location = "http:\/\/localhost\/";
+        window.location = "\/";
     }
     else {
         var messageLogin = document.querySelector('#login_message');
@@ -78,5 +78,5 @@ function authDataProcessing(response) {
 let registWay = document.querySelector("#registration_enter");
 
 registWay.addEventListener("click", () => {
-    window.location = "http:\/\/localhost\/registration";
+    window.location = "\/registration";
 });

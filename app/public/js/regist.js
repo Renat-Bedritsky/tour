@@ -119,7 +119,7 @@ registEnter.addEventListener("click", () => {
 
 function registDataProcessing(response) {
     if (typeof response.admission !== 'undefined') {
-        window.location = "http:\/\/localhost\/";
+        window.location = "\/";
     }
     else {
         var messageName = document.querySelector('#name_message');
